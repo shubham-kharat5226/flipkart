@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Flipkart</h2>
+        <div class="cart">
+            🛒 Cart: <span id="count">0</span>
+        </div>
+    </header>
+
+
+    <div class="products">
+
+        <div class="card">
+            <img
+                src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/mobile/x/7/t/-enriched-transparent-original-imahgqnz4hjyk6fh.png?q=90">
+            <h3>Mobile Phone</h3>
+            <p>₹25,000</p>
+            <button onclick="addCart('Mobile Phone',25000)">
+                Add Cart
+            </button>
+        </div>
+
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1IyR86WughWLtxyhxtCZrVJSp93kbwVle1J6Ea_-t3GFLjGjNm7wQLA&s=10">
+            <h3>Laptop</h3>
+            <p>₹150,000</p>
+            <button onclick="addCart('Laptop',150000)">
+                Add Cart
+            </button>
+        </div>
+
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/51he9pMSfZL._SX522_.jpg">
+            <h3>Headphone</h3>
+            <p>₹2000</p>
+            <button onclick="addCart('Headphone',2000)">
+                Add Cart
+            </button>
+        </div>
+
+    </div>
+
+
+    <h2 class="title">Cart Items</h2>
+
+    <div id="cartItems"></div>
+
+    <h2>
+        Total: ₹ <span id="total">0</span>
+    </h2>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -67,7 +67,7 @@ body {
     display: flex;
     background: #fff;
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-input {
@@ -132,10 +132,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 55px; /* Compenses for fixed navbar */
+    margin-top: 55px;
+    /* Compenses for fixed navbar */
     padding: 0.75rem 1rem;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-    overflow-x: auto; /* Scrollable if squeezed */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    /* Scrollable if squeezed */
 }
 
 .category-item {
@@ -182,7 +184,7 @@ body {
     background: white;
     padding: 1.5rem;
     border-radius: 4px;
-    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 .deals-header {
@@ -280,7 +282,7 @@ footer {
         gap: 1.5rem;
         align-items: flex-start;
         transition: left 0.3s ease;
-        box-shadow: 4px 0 10px rgba(0,0,0,0.2);
+        box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
     }
 
     .nav-actions.active {
@@ -303,11 +305,56 @@ footer {
         width: 45px;
         height: 45px;
     }
+
     .category-item span {
         font-size: 0.75rem;
     }
+
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 grid layouts on small phones */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 grid layouts on small phones */
         gap: 0.5rem;
     }
+}
+
+/* Dark Mode */
+
+.dark {
+
+    background: #121212;
+    color: white;
+
+}
+
+
+.dark header {
+
+    background: #000;
+    color: white;
+
+}
+
+
+.dark .card {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .cartBox {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark button {
+    background: #333;
+    color: white;
+}
+
+#themeBtn {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
 }
